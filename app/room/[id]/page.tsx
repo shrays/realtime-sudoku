@@ -5,6 +5,7 @@ import { Mistakes } from "@/_components/mistakes"
 import { ModeToggle } from "@/_components/mode-toggle"
 import { Numpad } from "@/_components/num-pad"
 import { SidePanel } from "@/_components/side-panel"
+import { SudokuKeyboard } from "@/_components/sudoku-keyboard"
 import { Sudoku } from "@/_components/sudoku/sudoku"
 import { Timer } from "@/_components/timer"
 import { Toolbar } from "@/_components/toolbar"
@@ -32,6 +33,7 @@ export default async function Room({
         </div>
         <NotesProvider>
           <TableCellProvider>
+            <SudokuKeyboard />
             <div className="order-2 col-span-6 flex size-full place-items-center sm:order-3 sm:col-span-3 sm:p-0">
               <div className="flex size-full place-items-center">
                 <Sudoku />
