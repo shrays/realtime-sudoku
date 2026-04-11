@@ -10,6 +10,7 @@ on:
 jobs:
   cleanup:
     runs-on: ubuntu-latest
+    environment: Production
     strategy:
       matrix:
         node-version: [22.x]
